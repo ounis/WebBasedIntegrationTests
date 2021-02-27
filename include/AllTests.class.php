@@ -1,4 +1,5 @@
 <?php
+
 require_once 'simpletest/autorun.php';
 require_once 'IntegrationTests.class.php';
 

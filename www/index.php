@@ -198,8 +198,8 @@ function prepare_files($filesArray, $prefix) {
             border:none;
         }
         </style>
-        <script type="text/javascript" src="/scripts/prototype/prototype.js"></script>
-        <script type="text/javascript" src="/scripts/scriptaculous/scriptaculous.js"></script>
+        <script type="text/javascript" src="/scripts/prototype.js"></script>
+        <script type="text/javascript" src="/scripts/scriptaculous.js"></script>
         <script type="text/javascript">
         function uncheck(element) {
             if (element.id != 'menu') {
