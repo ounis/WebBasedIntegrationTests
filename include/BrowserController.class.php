@@ -69,8 +69,9 @@ class BrowserController {
      * Close the browser
      *
      * @return void
+     * @static
      */
-    function stop() {
+    static function stop() {
         if (self::$started) {
             self::$selenium->stop();
         }

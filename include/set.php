@@ -1,5 +1,5 @@
 <?php
-$GLOBALS['host']             = 'http://tunlx007.tun.st.com:8999';
+$GLOBALS['host']             = 'http://github.com/ounis';
 
 // Primary user that will be used to run tests
 $GLOBALS['user']             = 'asma';
