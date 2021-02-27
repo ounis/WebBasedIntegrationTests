@@ -36,7 +36,7 @@ class IntegrationTests extends TestSuite {
      *
      * @see simpletest/TestSuite::run()
      */
-    function run($reporter) {
+    function run(&$reporter) {
         parent::run($reporter);
         BrowserController::stop();
     }
