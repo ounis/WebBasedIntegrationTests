@@ -1,10 +1,10 @@
 <?php
-require_once('simpletest/reporter.php');
+#require_once('simpletest/reporter.php');
 
 /**
  * Better view of the tests to run & results on the browser
  */
-class CustomHtmlReporter extends HtmlReporter {
+class CustomHtmlReporter {#extends HtmlReporter {
     protected $_timer;
 
     /**
@@ -13,7 +13,7 @@ class CustomHtmlReporter extends HtmlReporter {
      * @return void
      */
     function __construct() {
-        $this->HtmlReporter();
+        #$this->HtmlReporter();
     }
 
     /**
@@ -45,7 +45,7 @@ class CustomHtmlReporter extends HtmlReporter {
         $d = $minutes ? $minutes .' minute' .($minutes > 1 ? 's ' : ' ') : '';
         $d .= ($seconds + $micro) .' seconds';
         echo '<div style="border:1px solid orange; background: lightyellow; color:orange">Time taken: '. $d .'</div>'; 
-        parent::paintFooter($test_name);
+        #parent::paintFooter($test_name);
     }
 
     /**
@@ -56,7 +56,7 @@ class CustomHtmlReporter extends HtmlReporter {
      * @see simpletest/SimpleScorer::paintPass()
      */
     function paintPass($message) {
-        parent::paintPass($message);
+        #parent::paintPass($message);
         if (isset($_REQUEST['show_pass'])) {
             print '<span class="pass">Pass</span>: ';
             $breadcrumb = $this->getTestList();
@@ -75,7 +75,7 @@ class CustomHtmlReporter extends HtmlReporter {
      */
     function paintFail($message) {
         echo '<p><input type="checkbox" onclick="$(this).siblings().invoke(\'toggle\');" /><span>';
-        parent::paintFail($message);
+        #parent::paintFail($message);
         echo '</span></p>';
     }
 

@@ -310,7 +310,8 @@ function prepare_files($filesArray, $prefix) {
                             $suite = new IntegrationTests();
                             $files = prepare_files($_REQUEST['tests_to_run'], '../tests');
                             $suite->addFiles($files);
-                            $reporter = $suite->run(new CustomHtmlReporter());
+                            $customHtmlReporter = new CustomHtmlReporter();
+                            $reporter = $suite->run($customHtmlReporter);
                         }
                         ?>
                     </fieldset>
