@@ -154,7 +154,7 @@ function prepare_files($filesArray, $prefix) {
 ?>
 <html>
     <head>
-        <title>Tuleap integration tests</title>
+        <title>Selenuium integration tests</title>
         <style type="text/css">
         body {
             margin:0;

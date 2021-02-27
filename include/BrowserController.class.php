@@ -1,5 +1,4 @@
 <?php
-require_once 'Testing/Selenium.php';
 
 /**
  * Use SeleniumRC to control the browser
